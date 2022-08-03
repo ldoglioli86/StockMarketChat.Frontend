@@ -1,38 +1,140 @@
-.App {
+Form Button {
+  width: 100%;
+}
+
+h2 {
+  color: #313131;
+}
+
+h6 {
+  color: greenyellow;
+}
+
+.login-container {
+  padding: 30px;
+}
+
+hr.line {
+  border: 1px solid #313131;
+  width: 175px;
+}
+
+.app {
+  margin: auto;
+  padding-top: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chatroom {
+  padding: 30px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chatroom .header {
+  display: inline;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header h2 {
+  display: inline;
 }
 
-.App-link {
-  color: #61dafb;
+.header button, .join-container button {
+  float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat-selection, .current-chat {
+  margin-top: 20px;
+}
+
+.join-container {
+  display: inline;
+}
+
+.join-container select {
+  width: 75%;
+  display: inline;
+}
+
+.join-container button {
+  width: 25%;
+  display: inline;
+}
+
+.current-chat {
+  border-top: #ccc solid 3px;
+  padding-top: 10px;
+}
+
+.chat {
+  display: grid;
+  border-radius: 5px 5px 0px 0px;
+  border: solid #ccc;
+  padding: 5px;
+}
+
+.user-in-room {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.user-in-room > h3 {
+  display: inline;
+  width: fit-content;
+}
+
+.leave-room {
+  text-align: right;
+  margin-bottom: 4px;
+  width: 25%;
+  float: right;
+}
+
+.user-list {
+  float: left;
+  background-color: #313131;
+  color:white;
+  width: 200px;
+  height: 440px;
+  margin-right: 4px;
+}
+
+.message-container {
+  height: 400px;    
+  background-color: white;
+  overflow: auto;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.message-details div {
+  font-size: 14px;
+  display: inline;
+}
+
+.my-message {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.other-user-message {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.message {
+  display: inline-flex;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 18px;
+  color:white;
+  border-radius: 10px;
+  margin-top: 3px;
+}
+
+.from-user {
+  font-size: small;
+  margin-bottom: 3px;
+  margin-right: 5px;
 }
